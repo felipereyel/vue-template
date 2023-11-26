@@ -1,17 +1,9 @@
-<script setup lang="ts">
-import { ref } from 'vue'
-
-defineProps<{ msg: string }>()
-
-const count = ref(0)
-</script>
-
 <template>
-  <p class="read-more">This is about</p>
+  <div class="flex justify-center">
+    <HelloWorld msg="About" />
+  </div>
 </template>
 
-<style scoped>
-.read-more {
-  color: #888;
-}
-</style>
+<script setup lang="ts">
+import HelloWorld from '../components/HelloWorld.vue';
+</script>
